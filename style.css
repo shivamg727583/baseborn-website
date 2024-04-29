@@ -1,0 +1,275 @@
+@font-face {
+    font-family: a;
+    src: url(./fonts/65Universal\ Sans\ Display\ 876.ttf);
+}
+@font-face {
+    font-family: b;
+    src: url(./fonts/BasebornSans.ttf);
+}
+@font-face {
+    font-family: c;
+    src: url(./fonts/TWKLausanne-400.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: #101010;
+
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.loader{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    background: rgb(29, 28, 28);
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    color: white;
+}
+.loader h4{
+    font-size: 20px;
+    font-family: b;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.o-div{
+    border-radius: 50%;
+    padding: 10px 14px;
+}
+.loader h5{
+    text-transform: uppercase;
+    font-family: c;
+    font-weight: 100;
+}
+.main{
+    color: white;
+    width: 100%;
+}
+.mousefollower{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.mousefollower h4{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+}
+.navbar{
+    padding-top: 20px;
+    width: 97%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: c;
+    position: fixed;
+    z-index: 99;
+    
+}
+.nav1{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-transform: capitalize;
+
+}
+.nav1 h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+.nav2 h4{
+    font-size: 20px;
+    font-weight: 400;
+mix-blend-mode: difference;
+}
+
+.left{
+    text-align: start;
+    font-family: c;
+    padding: 30px 30px;
+    padding-left: 0px;
+    line-height: 1.4;
+    position: fixed;
+bottom: 0;
+font-size: 20px;
+    width: 34%;
+    /* background: red; */
+}
+.right{
+    width: 51.3%;
+height: calc(625vh + 200px);
+/* background: red; */
+background: #101010;
+transform: translate(95%,6%);
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.right-div1{
+    width: 100%;
+    height: 125vh;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.container{
+width: 100%;
+height: 110vh;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+
+
+}
+.container1{
+    background-image: url(https://assets-global.website-files.com/63640f262fc5ea1d18eb1986/65d207ba76d61ba2f8ac146f_65d2077fa7c957c2dfd3e7df_Canairi-baseborn-header-p-1080.webp);
+background-position: center;
+background-size: cover;
+}
+.container2{
+  position: relative;
+}
+#bgvideo2,#bgvideo5{
+    width: 100%;
+height: 100%;
+object-fit: cover;
+/* position: absolute; */
+}
+.video2{
+    position: absolute;
+}
+.video{
+    width: 70%;
+    height: 80%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all ease .3s;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container:hover .video{
+opacity: 1;
+transition: all ease 1s;
+}
+.container:hover .img{
+    opacity: 1;
+    transition: all ease 1s;
+    }
+.right h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top:20px ;
+    font-family: b;
+}
+.right h4{
+    font-size: 15px;
+    opacity: .6;
+    font-family:c;
+}
+.container3{
+    background-image: url(https://assets-global.website-files.com/63640f262fc5ea1d18eb1986/651e68bc799bcbc1409a0a84_651e67f4caa28de3251e22bb_palette-thumb-p-1080.webp);
+    background-position: center;
+    background-size: cover;
+    transition: all ease .05s;
+
+}
+.container3:hover{
+    transition: all ease .05s;
+    background-image: url(https://assets-global.website-files.com/63640f262fc5ea1d18eb1986/652cfcd6ab4df64e485eed19_Palette_HeroLogo_Fullscreen_Img.webp);
+
+}
+#bgvideo4{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+}
+.container4:hover #bgvideo4{
+    opacity: 1;
+    transition: all ease 1s;
+}
+.container4{
+    background-image: url(https://assets-global.website-files.com/63640f262fc5ea1d18eb1986/65d27490eafc1e4b5951065a_191601da19cc67c03f3eb195790eba38e5adf95d-2806x1870-p-1080.webp);
+    background-position: center;
+    background-size: cover;
+}
+.container .img{
+    width: 70%;
+    height: 70%;
+    opacity: 0;
+    position: absolute;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right-div2{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: end;
+    justify-content:space-between;
+    padding-bottom: 20px;
+    font-family: b;
+}
+.div{
+    display: flex;
+    flex-direction: column;
+gap: 10px;
+}
+.div h5{
+    text-transform: uppercase;
+    opacity: .6;
+    font-weight: 100;
+    font-family: c;
+}
+.div h3{
+    font-weight: 500;
+    font-family: c;
+}
+.page1 .h1{
+    height:19vw;
+    width: fit-content;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0px;
+    /* background: red; */
+    overflow: hidden;
+    /* color: blueviolet; */
+}
+
+.page1 #h1{
+   
+    font-size: 18.3vw;
+    text-transform: uppercase;
+    font-family: a;
+}
